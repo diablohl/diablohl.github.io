@@ -114,7 +114,7 @@
 <meta property="og:image" content="http://p1.bqimg.com/567571/1c77b729b82ada5e.png">
 <meta property="og:image" content="http://p1.bqimg.com/567571/62f9026fa193e23a.jpg">
 <meta property="og:image" content="http://i1.piimg.com/567571/4a42b00e7dfe0d0f.jpg">
-<meta property="og:updated_time" content="2017-02-24T13:46:26.113Z">
+<meta property="og:updated_time" content="2017-02-25T14:48:37.131Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github 搭建属于自己的博客">
 <meta name="twitter:description" content="前言参考网上几个教程后终于搭建起了自己的个人博客页面，所以整理一下自己也制作这么一个教程，顺便练习一下markdown
@@ -477,12 +477,18 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new post &quot;article title&quot;</div></pre></td></tr></table></figure>
 <p><img src="http://p1.bqimg.com/567571/62f9026fa193e23a.jpg" alt=""></p>
 <p>这时候在hexo根目录下\hexo\source_posts 将会看到 article title.md 文件</p>
-<p>用MarDown编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令：</p>
+<p>用MarkDown编辑器（windows平台可以使用markdown pad、有道云笔记这两个工具来写作）打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g   // 生成</div><div class="line">hexo d   // 部署</div></pre></td></tr></table></figure>
 <p>当然你也可以执行下面的命令，相当于上面两条命令的效果</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g #在部署前先生成</div></pre></td></tr></table></figure>
 <p><img src="http://i1.piimg.com/567571/4a42b00e7dfe0d0f.jpg" alt=""></p>
 <p>部署成功后访问 你的地址，<a href="https://yourName.github.io,将可以看到生成的文章。" target="_blank" rel="external">https://yourName.github.io,将可以看到生成的文章。</a></p>
+<h2 id="如何设置预览时每篇文章的高度呢"><a href="#如何设置预览时每篇文章的高度呢" class="headerlink" title="如何设置预览时每篇文章的高度呢"></a>如何设置预览时每篇文章的高度呢</h2><ol>
+<li>编写文章时，在文章中插入<!--more-->，在哪里插入就从哪里截断</li>
+<li>编辑主题配置文件，修改字段：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">auto_excerpt: </div><div class="line">  enable: false </div><div class="line">  length: 150（可自行设置）</div></pre></td></tr></table></figure>
+<p>将enable设为true，之后每篇文章会自动在150处截断</p>
 <hr>
 <p>到此，你的个人博客就搭建起来啦~下一篇将介绍如何更换和配置主题。</p>
 
@@ -524,6 +530,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/25/如何将GitHub Pages绑定到自己的个人域名/" rel="prev" title="如何将GitHub Pages绑定到自己的个人域名">
+                如何将GitHub Pages绑定到自己的个人域名 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -591,7 +601,7 @@
                alt="Diablo" />
           <p class="site-author-name" itemprop="name">Diablo</p>
            
-              <p class="site-description motion-element" itemprop="description">—After all this time?    -Always.</p>
+              <p class="site-description motion-element" itemprop="description">—After all this time?    —Always.</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -599,7 +609,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -643,6 +653,15 @@
                 </a>
               </span>
             
+              <span class="links-of-author-item">
+                <a href="http://i.youku.com/diablohl3" target="_blank" title="优酷个人空间">
+                  
+                    <i class="fa fa-fw fa-tv"></i>
+                  
+                  优酷个人空间
+                </a>
+              </span>
+            
           
         </div>
 
@@ -651,10 +670,11 @@
 
         
         
-
+		
+		
         
 
-
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=0&id=612844156&auto=0&height=32"></iframe>
       </section>
 
       
@@ -667,7 +687,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#文章转载参考：-手把手教你用Hexo-Github-搭建属于自己的博客"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">文章转载参考： 手把手教你用Hexo+Github 搭建属于自己的博客</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number"></span> <span class="nav-text">步骤</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境搭建准备"><span class="nav-number"></span> <span class="nav-text">环境搭建准备</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Node-js环境"><span class="nav-number">0.1.</span> <span class="nav-text">配置Node.js环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Git环境"><span class="nav-number">0.2.</span> <span class="nav-text">配置Git环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#github账户的注册和配置"><span class="nav-number">0.3.</span> <span class="nav-text">github账户的注册和配置</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo"><span class="nav-number"></span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo的相关配置"><span class="nav-number"></span> <span class="nav-text">hexo的相关配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将Hexo与github-page-联系起来"><span class="nav-number"></span> <span class="nav-text">将Hexo与github page 联系起来</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Git个人信息"><span class="nav-number">1.</span> <span class="nav-text">配置Git个人信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Deployment"><span class="nav-number">2.</span> <span class="nav-text">配置Deployment</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写博客、发布文章"><span class="nav-number"></span> <span class="nav-text">写博客、发布文章</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#文章转载参考：-手把手教你用Hexo-Github-搭建属于自己的博客"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">文章转载参考： 手把手教你用Hexo+Github 搭建属于自己的博客</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number"></span> <span class="nav-text">步骤</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境搭建准备"><span class="nav-number"></span> <span class="nav-text">环境搭建准备</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Node-js环境"><span class="nav-number">0.1.</span> <span class="nav-text">配置Node.js环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Git环境"><span class="nav-number">0.2.</span> <span class="nav-text">配置Git环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#github账户的注册和配置"><span class="nav-number">0.3.</span> <span class="nav-text">github账户的注册和配置</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo"><span class="nav-number"></span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo的相关配置"><span class="nav-number"></span> <span class="nav-text">hexo的相关配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将Hexo与github-page-联系起来"><span class="nav-number"></span> <span class="nav-text">将Hexo与github page 联系起来</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Git个人信息"><span class="nav-number">1.</span> <span class="nav-text">配置Git个人信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Deployment"><span class="nav-number">2.</span> <span class="nav-text">配置Deployment</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写博客、发布文章"><span class="nav-number"></span> <span class="nav-text">写博客、发布文章</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何设置预览时每篇文章的高度呢"><span class="nav-number"></span> <span class="nav-text">如何设置预览时每篇文章的高度呢</span></a></div>
             
 
           </div>
@@ -724,6 +744,7 @@
     
     
   </div>
+
 
   
 
