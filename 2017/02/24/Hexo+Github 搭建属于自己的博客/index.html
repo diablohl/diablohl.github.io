@@ -103,9 +103,6 @@
 <meta property="og:image" content="http://p1.bqimg.com/567571/d498ca767dc3fe57.png">
 <meta property="og:image" content="http://i1.piimg.com/567571/2f3a3bd7d364471d.png">
 <meta property="og:image" content="http://p1.bqimg.com/567571/73b5501c0e595e78.png">
-<meta property="og:image" content="http://i1.piimg.com/567571/4b424e9e5ea167b4.jpg">
-<meta property="og:image" content="http://p1.bqimg.com/567571/be38acd9121bd46a.jpg">
-<meta property="og:image" content="http://i1.piimg.com/567571/8af33096ef901772.jpg">
 <meta property="og:image" content="http://p1.bqimg.com/567571/b450acb6fea4eeca.jpg">
 <meta property="og:image" content="http://p1.bqimg.com/567571/0957cfe8ba5e890e.jpg">
 <meta property="og:image" content="http://p1.bqimg.com/567571/90ce0af322a2ce42.jpg">
@@ -114,7 +111,7 @@
 <meta property="og:image" content="http://p1.bqimg.com/567571/1c77b729b82ada5e.png">
 <meta property="og:image" content="http://p1.bqimg.com/567571/62f9026fa193e23a.jpg">
 <meta property="og:image" content="http://i1.piimg.com/567571/4a42b00e7dfe0d0f.jpg">
-<meta property="og:updated_time" content="2017-02-26T09:17:05.662Z">
+<meta property="og:updated_time" content="2017-02-28T12:41:34.766Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github 搭建属于自己的博客">
 <meta name="twitter:description" content="前言参考网上几个教程后终于搭建起了自己的个人博客页面，所以整理一下自己也制作这么一个教程，顺便练习一下markdown
@@ -448,6 +445,7 @@
 <p><strong>不熟悉git的可以参考此网站：<a href="http://iissnan.com/progit/" target="_blank" rel="external">Pro Git 简体中文版</a></strong></p>
 <h4 id="github账户的注册和配置"><a href="#github账户的注册和配置" class="headerlink" title="github账户的注册和配置"></a>github账户的注册和配置</h4><ol>
 <li><p>注册Github账号</p>
+<p>这个就不过多介绍，进官网注册就行了</p>
 </li>
 <li><p>创建代码库</p>
 <p>登陆之后，点击页面右上角的加号，选择New repository：</p>
@@ -455,18 +453,11 @@
 </ol>
 <p><img src="http://i1.piimg.com/567571/2f3a3bd7d364471d.png" alt=""></p>
 <p>进入代码库创建页面：</p>
-<p>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（不写也没有关系），如图所示：</p>
+<p>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（不写也没有关系），勾选Initialize this repository with a README，如图所示：</p>
 <p><img src="http://p1.bqimg.com/567571/73b5501c0e595e78.png" alt=""></p>
+<p>然后点击最下面的绿色按钮来创建</p>
 <p><strong>注意：这里的yourname,如果你的名字是xxx，那你就填 xxx.github.io</strong></p>
-<ol>
-<li>代码库设置</li>
-</ol>
-<p>正确创建之后，你将会看到如下界面：</p>
-<p><img src="http://i1.piimg.com/567571/4b424e9e5ea167b4.jpg" alt=""></p>
-<p>接下来开启gh-pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：</p>
-<p><img src="http://p1.bqimg.com/567571/be38acd9121bd46a.jpg" alt=""></p>
-<p><img src="http://i1.piimg.com/567571/8af33096ef901772.jpg" alt=""></p>
-<p>点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面。 如果你的配置没有问题，那么大约15分钟之后，yourname.github.io这个网址就可以正常访问了~ 如果yourname.github.io已经可以正常访问了，那么Github一侧的配置已经全部结束了。</p>
+<p>正确创建之后，Github将会自动替你创建出一个gh-pages的页面，yourname.github.io这个网址就可以正常访问了~ 如果yourname.github.io已经可以正常访问了，那么Github一侧的配置已经全部结束了。</p>
 <hr>
 <h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p>首先，在自己认为合适的地方创建一个文件夹，这里我以E：/hexo 为例子讲解，首先在E盘目录下创建Hexo文件夹，并在命令行的窗口进入到该目录</p>
 <p><img src="http://p1.bqimg.com/567571/b450acb6fea4eeca.jpg" alt=""></p>
@@ -501,7 +492,7 @@
 <p>到目前为止，Hexo在本地的配置已经全都结束了。</p>
 <hr>
 <h1 id="将Hexo与github-page-联系起来"><a href="#将Hexo与github-page-联系起来" class="headerlink" title="将Hexo与github page 联系起来"></a>将Hexo与github page 联系起来</h1><h3 id="配置Git个人信息"><a href="#配置Git个人信息" class="headerlink" title="配置Git个人信息"></a>配置Git个人信息</h3><ol>
-<li>设置Git的user name和email：</li>
+<li>设置Git的user name和email。在Git Bash中输入以下两行指令：</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;yourname&quot;</div><div class="line">git config --global user.email &quot;Github的注册邮箱地址&quot;</div></pre></td></tr></table></figure>
 <ol>
@@ -510,7 +501,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;Github的注册邮箱地址&quot;</div></pre></td></tr></table></figure>
 <p>3.添加密钥<br>待秘钥生成完毕，会得到两个文件id_rsa和id_rsa.pub，默认的存储路径是：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\Users\Administrator\.ssh</div></pre></td></tr></table></figure>
-<p>用带格式的记事本打开id_rsa.pub，Ctrl + a复制里面的所有内容，然后进入<a href="https://github.com/settings/ssh：" target="_blank" rel="external">https://github.com/settings/ssh：</a></p>
+<p>用带格式的记事本打开id_rsa.pub，Ctrl + a复制里面的所有内容，然后进入<a href="https://github.com/settings/ssh，点击" target="_blank" rel="external">https://github.com/settings/ssh，点击</a> New ssh key 后，出现下图所示：</p>
 <p><img src="http://i1.piimg.com/567571/85ed7e371072aad1.png" alt=""></p>
 <p>将复制的内容粘贴到Key的输入框，随便写好Title里面的内容，点击Add SSH key按钮即可。</p>
 <p>4.测试</p>
@@ -535,7 +526,7 @@
 <p>当然你也可以执行下面的命令，相当于上面两条命令的效果</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g #在部署前先生成</div></pre></td></tr></table></figure>
 <p><img src="http://i1.piimg.com/567571/4a42b00e7dfe0d0f.jpg" alt=""></p>
-<p>部署成功后访问 你的地址，<a href="https://yourName.github.io,将可以看到生成的文章。" target="_blank" rel="external">https://yourName.github.io,将可以看到生成的文章。</a></p>
+<p>部署成功后访问 你的地址，<a href="https://yourName.github.io，将可以看到生成的文章。" target="_blank" rel="external">https://yourName.github.io，将可以看到生成的文章。</a></p>
 <h2 id="如何设置预览时每篇文章的高度呢"><a href="#如何设置预览时每篇文章的高度呢" class="headerlink" title="如何设置预览时每篇文章的高度呢"></a>如何设置预览时每篇文章的高度呢</h2><ol>
 <li>编写文章时，在文章中插入 </li>
 </ol>
